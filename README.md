@@ -1,2 +1,2 @@
 # webghost
-Chromium browser with recording hability
+Chromium based browser with recording ability
