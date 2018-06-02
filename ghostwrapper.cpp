@@ -4,12 +4,22 @@
 
 ghostWrapper::ghostWrapper(QObject *parent) : QObject(parent)
 {
+    ghost = nullptr;
+}
+
+ghostWrapper::~ghostWrapper()
+{
+    if (ghost != nullptr) {
+        delete ghost;
+    }
 }
 
 void ghostWrapper::init(QGuiApplication *app,
                         QQmlApplicationEngine *engine)
 {
     ghost = new Qtghost(app, engine); //Qtghost needs app and QML engine
+    Q_ASSERT(ghost->getVersion() == "0.0.2");
+    ghost->setStoreAllMouseMoves(true);
 }
 
 void ghostWrapper::startRecording()

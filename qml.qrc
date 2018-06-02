@@ -8,5 +8,6 @@
         <file>img/baseline_pause_black_18dp.png</file>
         <file>img/baseline_play_arrow_black_18dp.png</file>
         <file>ImageButton.qml</file>
+        <file>img/icon.png</file>
     </qresource>
 </RCC>

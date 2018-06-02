@@ -14,6 +14,7 @@ class ghostWrapper : public QObject
 
 public:
     ghostWrapper(QObject *parent=Q_NULLPTR);
+    ~ghostWrapper();
     void init(QGuiApplication *app,
               QQmlApplicationEngine *engine);
     Q_INVOKABLE void startRecording();

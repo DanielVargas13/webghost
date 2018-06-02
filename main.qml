@@ -177,18 +177,20 @@ ApplicationWindow {
         title: "About"
 
         contentItem: Rectangle {
-            implicitWidth: 400
+            implicitWidth: 430
             implicitHeight: 100
             Column {
                 anchors.fill: parent
                 anchors.topMargin: 10
                 anchors.leftMargin: 10
-                spacing: 10
+                spacing: 5
                 Text {
                     text: Qt.application.name+" "+Qt.application.version+"\n"+Qt.application.organization
+                    font.pointSize: 12
                 }
                 Text {
                     text: Qt.application.domain
+                    font.pointSize: 10
                     MouseArea {
                         anchors.fill: parent
                         hoverEnabled: true
@@ -200,6 +202,13 @@ ApplicationWindow {
                         }
                     }
                 }
+            }
+            Image {
+                width: 64
+                height: 64
+                anchors.right: parent.right
+                anchors.rightMargin: 5
+                source: "qrc:/img/icon.png"
             }
         }
     }

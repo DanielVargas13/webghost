@@ -2,6 +2,8 @@ TEMPLATE = app
 QT += webengine
 CONFIG += c++11
 
+RC_FILE = webghost.rc
+
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -30,7 +32,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-win32:CONFIG(release, debug|release): LIBS += -LD:/workspace/qtghost/build-qtghost-Desktop_Qt_5_10_1_MSVC2017_64bit-Debug/release/ -lqtghost
+win32:CONFIG(release, debug|release): LIBS += -LD:/workspace/qtghost/build-qtghost-Desktop_Qt_5_10_1_MSVC2017_64bit-Release/release/ -lqtghost
 else:win32:CONFIG(debug, debug|release): LIBS += -LD:/workspace/qtghost/build-qtghost-Desktop_Qt_5_10_1_MSVC2017_64bit-Debug/debug/ -lqtghost
 else:unix: LIBS += -LD:/workspace/qtghost/build-qtghost-Desktop_Qt_5_10_1_MSVC2017_64bit-Debug/ -lqtghost
 
