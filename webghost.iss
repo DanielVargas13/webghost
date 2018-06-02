@@ -21,12 +21,13 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DisableProgramGroupPage=yes
-LicenseFile=D:\workspace\webghost\LICENSE
+LicenseFile=LICENSE
 OutputDir=D:\workspace
 OutputBaseFilename=webghost
-SetupIconFile=D:\workspace\webghost\webghost.ico
+SetupIconFile=webghost.ico
 Compression=lzma
 SolidCompression=yes
+
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
