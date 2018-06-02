@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_UseOpenGLES);
     QGuiApplication app(argc, argv);
 
-    app.setApplicationVersion("0.01");
+    app.setApplicationVersion("0.0.1");
     app.setOrganizationDomain("https://github.com/antonioalecrim/webghost");
 
     QtWebEngine::initialize();
